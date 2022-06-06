@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "./FilterButton.scss";
 import { handleFilter, handleDelete } from "../../features/jobSlice";
 
