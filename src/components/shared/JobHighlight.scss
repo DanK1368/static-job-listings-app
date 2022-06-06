@@ -1,0 +1,14 @@
+@use "../../index.scss" as *;
+
+.jobHighlight {
+  padding: 0.4rem 0.7rem;
+  background-color: $primaryColor;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 999999px;
+  font-weight: 700;
+}
+
+.featured {
+  background-color: $veryDarkGrayishCyan;
+}

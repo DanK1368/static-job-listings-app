@@ -1,0 +1,97 @@
+@use "../../index.scss" as *;
+
+.jobItem {
+  width: clamp(327px, 80%, 1110px);
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-left: 6px solid $primaryColor;
+  padding: 2rem 1rem 1rem 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+
+  &__upperContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $darkGrayishCyan;
+
+    @media (min-width: 800px) {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: $primaryColor;
+      font-size: 15px;
+    }
+
+    a {
+      font-size: 15px;
+      text-decoration: none;
+      font-weight: 700;
+      color: $veryDarkGrayishCyan;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  &__headingContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__highlightWrapper {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__listContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    li {
+      color: $darkGrayishCyan;
+    }
+
+    li:nth-child(1) {
+      list-style: none;
+    }
+  }
+
+  &__lowerContainer {
+    flex: 1;
+    padding-block: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__companyImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, -50%);
+    width: 48px;
+
+    @media (min-width: 800px) {
+      position: static;
+      transform: none;
+      width: 100px;
+      height: 100px;
+      margin-right: 2rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// start reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+// end rest
+
+// start variables
+// colors
+$primaryColor: hsl(180, 29%, 50%);
+$lightGrayishCyanBg: hsl(180, 52%, 96%); //background
+$lightGrayishCyanFilter: hsl(180, 31%, 95%);
+$darkGrayishCyan: hsl(180, 8%, 52%);
+$veryDarkGrayishCyan: hsl(180, 14%, 20%);

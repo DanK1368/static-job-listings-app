@@ -1,0 +1,10 @@
+@use "../../index.scss" as *;
+
+.header {
+  background-color: $primaryColor;
+  position: relative;
+  min-height: 20vh;
+  background-image: url("../../images/bg-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

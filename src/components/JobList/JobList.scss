@@ -1,0 +1,10 @@
+@use "../../index.scss" as *;
+
+.joblist {
+  background: $lightGrayishCyanBg;
+  min-height: 80vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
