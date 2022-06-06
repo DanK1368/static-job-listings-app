@@ -1,7 +1,6 @@
 import "./JobList.scss";
 import JobItem from "../JobItem/JobItem";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const JobList = () => {
   const { jobItems } = useSelector(store => store.jobs);
