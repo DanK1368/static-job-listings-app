@@ -1,7 +1,6 @@
 import "./JobItem.scss";
 import { NewJob, FeaturedJob } from "../shared/JobHighlight";
 import { TagButton } from "../shared/FilterButton";
-import Manage from "../../images/manage.svg";
 
 const JobItem = ({
   company,
@@ -28,7 +27,7 @@ const JobItem = ({
             {featured && <FeaturedJob />}
           </div>
         </div>
-        <a href="#">{position}</a>
+        <button>{position}</button>
         <ul className="jobItem__listContainer">
           <li>{postedAt}</li>
           <li>{contract}</li>
