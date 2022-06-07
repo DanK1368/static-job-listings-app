@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 
 const JobList = () => {
   const { jobItems } = useSelector(store => store.jobs);
+  const { filter } = useSelector(store => store.jobs);
+  console.log(filter);
 
   return (
     <main className="joblist">
